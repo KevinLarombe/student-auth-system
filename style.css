@@ -10,31 +10,32 @@ body {
     justify-content: center;
     align-items: center;
     padding: 24px;
-    background: #f1f5f9;
+    background: #000000;
     font-family: Arial, sans-serif;
-    color: #1e293b;
+    color: #f1f5f9;
 }
 
 .container {
     width: 100%;
     max-width: 420px;
     padding: 32px;
-    background: white;
+    background: #171717;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+    border: 1px solid #333333;
 }
 
 h1 {
     margin-top: 0;
     margin-bottom: 8px;
     text-align: center;
-    color: #1d4ed8;
+    color: #60a5fa;
 }
 
 .subtitle {
     margin-bottom: 24px;
     text-align: center;
-    color: #64748b;
+    color: #a3a3a3;
 }
 
 label {
@@ -42,19 +43,26 @@ label {
     margin: 16px 0 6px;
     font-weight: bold;
     font-size: 14px;
+    color: #e5e5e5;
 }
 
 input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #404040;
     border-radius: 6px;
     font-size: 15px;
+    background: #262626;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #a3a3a3;
 }
 
 input:focus {
-    outline: 2px solid #93c5fd;
-    border-color: #2563eb;
+    outline: 2px solid #60a5fa;
+    border-color: #3b82f6;
 }
 
 button {
@@ -79,10 +87,11 @@ button:hover {
     margin-top: 22px;
     text-align: center;
     font-size: 14px;
+    color: #d4d4d4;
 }
 
 a {
-    color: #2563eb;
+    color: #60a5fa;
     text-decoration: none;
 }
 
@@ -97,24 +106,25 @@ a:hover {
 }
 
 .error {
-    color: #991b1b;
-    background: #fee2e2;
+    color: #fca5a5;
+    background: #450a0a;
 }
 
 .success {
-    color: #166534;
-    background: #dcfce7;
+    color: #86efac;
+    background: #052e16;
 }
 
 .welcome {
     padding: 16px;
-    background: #eff6ff;
+    background: #262626;
+    border: 1px solid #404040;
     border-radius: 8px;
     text-align: center;
 }
 
 .welcome h2 {
-    color: #1d4ed8;
+    color: #60a5fa;
 }
 
 .logout-button {
