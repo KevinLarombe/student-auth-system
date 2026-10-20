@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
     min-height: 100vh;
@@ -12,7 +11,7 @@ body {
     align-items: center;
     padding: 24px;
 
-    /* Black background with subtle grid lines */
+    /* Black background with subtle white grid lines */
     background-color: #000000;
     background-image:
         linear-gradient(
@@ -26,11 +25,9 @@ body {
         );
 
     background-size: 50px 50px;
-
     font-family: Arial, sans-serif;
     color: #f1f5f9;
 }
-
 
 .container {
     width: 100%;
@@ -46,7 +43,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 8px;
     text-align: center;
-    color: #60a5fa;
+    color: #ffffff;
 }
 
 .subtitle {
@@ -63,40 +60,45 @@ label {
     color: #e5e5e5;
 }
 
+/* Black input boxes with white borders and text */
 input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #404040;
+    border: 1px solid #666666;
     border-radius: 6px;
     font-size: 15px;
-    background: #262626;
+    background: #000000;
     color: #ffffff;
 }
 
 input::placeholder {
-    color: #a3a3a3;
+    color: #999999;
 }
 
+/* White outline when typing */
 input:focus {
-    outline: 2px solid #60a5fa;
-    border-color: #3b82f6;
+    outline: 2px solid #ffffff;
+    border-color: #ffffff;
 }
 
+/* White button with black text */
 button {
     width: 100%;
     margin-top: 22px;
     padding: 12px;
-    border: none;
+    border: 1px solid #ffffff;
     border-radius: 6px;
-    background: #2563eb;
-    color: white;
+    background: #ffffff;
+    color: #000000;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: background 0.2s, color 0.2s;
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #cccccc;
+    border-color: #cccccc;
 }
 
 .footer {
@@ -108,11 +110,12 @@ button:hover {
 }
 
 a {
-    color: #60a5fa;
+    color: #ffffff;
     text-decoration: none;
 }
 
 a:hover {
+    color: #cccccc;
     text-decoration: underline;
 }
 
@@ -125,11 +128,13 @@ a:hover {
 .error {
     color: #fca5a5;
     background: #450a0a;
+    border: 1px solid #662222;
 }
 
 .success {
     color: #86efac;
     background: #052e16;
+    border: 1px solid #166534;
 }
 
 .welcome {
@@ -141,13 +146,17 @@ a:hover {
 }
 
 .welcome h2 {
-    color: #60a5fa;
+    color: #ffffff;
 }
 
+/* White logout button to match the theme */
 .logout-button {
-    background: #dc2626;
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
 }
 
 .logout-button:hover {
-    background: #b91c1c;
+    background: #cccccc;
+    border-color: #cccccc;
 }
